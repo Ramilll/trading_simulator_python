@@ -1,0 +1,13 @@
+{
+    "simulator": {
+        "hitrate": 1
+    },
+    "pnl_manager": {
+        "stoplloss": -5000,
+        "starting_balance": 100.000
+    },
+    "model": {
+        "path": "FP_models.csv",
+        "model_names": ["FP model A", "FP model B", "FP model C"]
+    }
+}
