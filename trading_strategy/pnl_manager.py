@@ -1,13 +1,14 @@
+from utils.definitions import Config
 class PnlManager:
     """
     PnlManager is responsible for calculating the PnL of the trading strategy.
     """
-    def __init__(self, starting_balance=0, stoploss=-5000, current_position=0, fee=0.0) -> None:
-        self.starting_balance = starting_balance
-        self.current_balance = starting_balance
-        self.stoploss = stoploss
-        self.current_position = current_position
-        self.fee = fee
+    def __init__(self, config: Config) -> None:
+        self.starting_balance = config["starting_balance"]
+        self.current_balance = config["starting_balance"]
+        self.stoploss = config["stoploss"]
+        self.current_position = config["current_position"]
+        self.percentage_fee = config["percentage_fee"]
 
     def update(self, order_book) -> None:
         """Update the PnL of the trading strategy
