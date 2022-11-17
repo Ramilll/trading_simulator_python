@@ -4,7 +4,7 @@
   },
   "pnl_manager": {
     "starting_balance": 100000,
-    "stoplloss": -5000,
+    "stoploss": -5000,
     "current_position": 0,
     "percentage_fee": 0
   },
@@ -17,7 +17,11 @@
     },
     "model": {
       "path": "FP_models.csv",
-      "model_names": ["FP model A", "FP model B", "FP model C"]
+      "model_names": [
+        "FP model A",
+        "FP model B",
+        "FP model C"
+      ]
     }
   }
 }
