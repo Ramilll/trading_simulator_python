@@ -1,4 +1,4 @@
-	•	The ultimate goal of this assignment is to search for a profitable trading strategy. In particular, we want you to study the provided historical data, and try to find a trading strategy which you would be comfortable to trade with your own money on unobserved data. Similarly, we would like you to give a solid reasoning why your trading strategy is good (imagine you want to persuade someone else to put their money into your trading), given that you find one.
+The ultimate goal of this assignment is to search for a profitable trading strategy. In particular, we want you to study the provided historical data, and try to find a trading strategy which you would be comfortable to trade with your own money on unobserved data. Similarly, we would like you to give a solid reasoning why your trading strategy is good (imagine you want to persuade someone else to put their money into your trading), given that you find one.
 
 ___________________________________________________
 
