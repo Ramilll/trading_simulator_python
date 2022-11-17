@@ -4,6 +4,8 @@ from utils.order_book import OrderBook
 from utils.definitions import Config
 from utils.dir import Dir
 from utils.order_execution_snapshot import OrderExecutionSnapshot
+from trading_strategy.model import Model
+from trading_strategy.hyperparams import Hyperparams
 
 
 class TradingStrategy:
@@ -12,9 +14,9 @@ class TradingStrategy:
     """
 
     def __init__(self, config: Config) -> None:
-        self.hyperparams = config["hyperparams"]
+        self.hyperparams = Hyperparams(config["hyperparams"])
         self.name = config["name"]
-        self.model = config["model"]
+        self.model = Model(config["model"])
 
     def process_order_book(self, order_book: OrderBook) -> Union[Action, None]:
         """Simulate one step of the trading strategy"""

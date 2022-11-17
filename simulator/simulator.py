@@ -4,7 +4,7 @@ from utils.order_book import OrderBook
 from utils.config import JsonConfig
 from utils.definitions import Config
 from typing import List
-from hitrate_simulator import HitRateSimulator
+from simulator.hitrate_simulator import HitRateSimulator
 from utils.order_execution_snapshot import OrderExecutionSnapshot
 from utils.action import Action
 import pandas as pd
@@ -45,7 +45,7 @@ class Simulator:
         """Execute the simulation"""
         return OrderExecutionSnapshot(action.dir, action.price, action.amount)
 
-    def simulate(self, prices: list) -> None:
+    def simulate(self) -> None:
         """Run the simulation"""
         for order_book in self.order_books:
             self.step(order_book)

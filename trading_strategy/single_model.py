@@ -2,7 +2,7 @@ import pandas as pd
 from utils.definitions import Price, Prediction
 
 
-class Model:
+class SingleModel:
     @staticmethod
     def get_predictions_by_timestamp(path, column_name):
         df = pd.read_csv(path)

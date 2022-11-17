@@ -1,7 +1,7 @@
 {
   "simulator": {
-    "hitrate": 1,
-    "data_path": "FP_models.csv"
+    "hit_rate": 1,
+    "data_path": "data/FP_models.csv"
   },
   "pnl_manager": {
     "starting_balance": 100000,
@@ -17,7 +17,7 @@
       "pose_slope": 0
     },
     "model": {
-      "path": "FP_models.csv",
+      "path": "data/FP_models.csv",
       "model_names": [
         "FP model A",
         "FP model B",
