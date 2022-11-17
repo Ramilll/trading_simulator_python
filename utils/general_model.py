@@ -1,7 +1,8 @@
 from model import Model
-from definitions import Prediction
+from utils.definitions import Prediction
 from typing import List
 import numpy as np
+
 
 class GeneralModel:
     def __init__(self, config) -> None:
