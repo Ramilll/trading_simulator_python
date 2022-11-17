@@ -1,13 +1,23 @@
 {
-    "simulator": {
-        "hitrate": 1
-    },
-    "pnl_manager": {
-        "stoplloss": -5000,
-        "starting_balance": 100.000
-    },
-    "model": {
-        "path": "FP_models.csv",
-        "model_names": ["FP model A", "FP model B", "FP model C"]
+  "simulator": {
+    "hitrate": 1
+  },
+  "pnl_manager": {
+    "starting_balance": 100000,
+    "stoplloss": -5000,
+    "current_position": 0,
+    "percentage_fee": 0
+  },
+  "strategy": {
+    "name": "Base",
+    "hyperparams": {
+      "buy_threshold": 0,
+      "sell_threshold": 0,
+      "pose_slope": 0
     }
+  },
+  "model": {
+    "path": "FP_models.csv",
+    "model_names": ["FP model A", "FP model B", "FP model C"]
+  }
 }

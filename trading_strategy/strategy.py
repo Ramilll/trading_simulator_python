@@ -9,7 +9,8 @@ class TradingStrategy:
     """
 
     def __init__(self, config: Config) -> None:
-        pass
+        self.hyperparams = config["hyperparams"]
+        self.name = config["name"]
 
     def step(self, order_book: OrderBook) -> Union[Action, None]:
         """Simulate one step of the trading strategy
