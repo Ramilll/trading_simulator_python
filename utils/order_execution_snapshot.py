@@ -4,7 +4,7 @@ from utils.definitions import Price
 
 
 @dataclass
-class Action:
+class OrderExecutionSnapshot:
     dir: Dir
     price: Price
     amount: int

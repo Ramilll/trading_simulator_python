@@ -1,11 +1,12 @@
 import pandas as pd
-from definitions import Price, Prediction
+from utils.definitions import Price, Prediction
 
-class Model:
+
+class SingleModel:
     @staticmethod
     def get_predictions_by_timestamp(path, column_name):
         df = pd.read_csv(path)
-        timestamp = pd.to_datetime(df['time']).apply(lambda x: x.value)
+        timestamp = pd.to_datetime(df["time"]).apply(lambda x: x.value)
         predictions = df[column_name] - df["market price"]
         return dict(zip(timestamp, predictions))
 

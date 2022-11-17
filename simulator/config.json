@@ -1,11 +1,12 @@
 {
   "simulator": {
-    "hitrate": 1
+    "hit_rate": 1,
+    "data_path": "data/FP_models.csv"
   },
   "pnl_manager": {
     "starting_balance": 100000,
-    "stoplloss": -5000,
-    "current_position": 0,
+    "stoploss": -5000,
+    "current_pose": 0,
     "percentage_fee": 0
   },
   "strategy": {
@@ -16,8 +17,12 @@
       "pose_slope": 0
     },
     "model": {
-      "path": "FP_models.csv",
-      "model_names": ["FP model A", "FP model B", "FP model C"]
+      "path": "data/FP_models.csv",
+      "model_names": [
+        "FP model A",
+        "FP model B",
+        "FP model C"
+      ]
     }
   }
 }
