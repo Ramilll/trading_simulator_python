@@ -7,4 +7,4 @@ from definitions import Price
 class Action:
     dir: Dir
     price: Price
-    quantity: int
+    amount: int
