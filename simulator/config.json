@@ -14,10 +14,10 @@
       "buy_threshold": 0,
       "sell_threshold": 0,
       "pose_slope": 0
+    },
+    "model": {
+      "path": "FP_models.csv",
+      "model_names": ["FP model A", "FP model B", "FP model C"]
     }
-  },
-  "model": {
-    "path": "FP_models.csv",
-    "model_names": ["FP model A", "FP model B", "FP model C"]
   }
 }
