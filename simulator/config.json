@@ -1,11 +1,12 @@
 {
   "simulator": {
-    "hitrate": 1
+    "hitrate": 1,
+    "data_path": "FP_models.csv"
   },
   "pnl_manager": {
     "starting_balance": 100000,
     "stoploss": -5000,
-    "current_position": 0,
+    "current_pose": 0,
     "percentage_fee": 0
   },
   "strategy": {

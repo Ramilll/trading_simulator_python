@@ -13,9 +13,7 @@ class Model:
     def __init__(self, path: str, model_name: str) -> None:
         self.path = path
         self.model_name = model_name
-        self.predictions_by_timestamp = self.get_predictions_by_timestamp(
-            self.path, self.model_name
-        )
+        self.predictions_by_timestamp = self.get_predictions_by_timestamp(self.path, self.model_name)
 
     def predict(self, timestamp: int) -> Prediction:
         return self.predictions_by_timestamp[timestamp]

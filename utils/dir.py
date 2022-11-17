@@ -1,4 +1,5 @@
-from enum import Enum 
+from enum import Enum
+
 
 class Dir(Enum):
     BID = 0
@@ -27,4 +28,3 @@ class Dir(Enum):
 
     def opposite_dir(self) -> "Dir":
         return Dir.BID if self == Dir.ASK else Dir.ASK
-        

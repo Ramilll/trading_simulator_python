@@ -1,4 +1,5 @@
-import json 
+import json
+
 
 class JsonConfig:
     def __init__(self, config_file):
