@@ -1,11 +1,12 @@
-from utils.action import Action
 from typing import Union
-from utils.order_book import OrderBook
+
+from trading_strategy.hyperparams import Hyperparams
+from trading_strategy.model import Model
+from utils.action import Action
 from utils.definitions import Config
 from utils.dir import Dir
+from utils.order_book import OrderBook
 from utils.order_execution_snapshot import OrderExecutionSnapshot
-from trading_strategy.model import Model
-from trading_strategy.hyperparams import Hyperparams
 
 
 class TradingStrategy:

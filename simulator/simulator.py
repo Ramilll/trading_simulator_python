@@ -1,13 +1,15 @@
+from typing import List
+
+import pandas as pd
+
+from simulator.hitrate_simulator import HitRateSimulator
 from trading_strategy.pnl_manager import PnlManager
 from trading_strategy.strategy import TradingStrategy
-from utils.order_book import OrderBook
+from utils.action import Action
 from utils.config import JsonConfig
 from utils.definitions import Config
-from typing import List
-from simulator.hitrate_simulator import HitRateSimulator
+from utils.order_book import OrderBook
 from utils.order_execution_snapshot import OrderExecutionSnapshot
-from utils.action import Action
-import pandas as pd
 
 
 class Simulator:

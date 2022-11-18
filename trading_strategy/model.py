@@ -1,7 +1,9 @@
+from typing import List
+
+import numpy as np
+
 from trading_strategy.single_model import SingleModel
 from utils.definitions import Prediction
-from typing import List
-import numpy as np
 
 
 class Model:

@@ -1,5 +1,6 @@
 import pandas as pd
-from utils.definitions import Price, Prediction
+
+from utils.definitions import Prediction, Price
 
 
 class SingleModel:
